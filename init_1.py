@@ -1,7 +1,9 @@
+#!/usr/bin/python
+
 from subprocess import call
 import requests as req
 
-call(['cd', '$HOME'])
+call(['cd'])
 call(['/usr/bin/ruby', '-e', "'$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'"])
 call(['brew', 'install', 'git'])
 call(['brew', 'install', 'node'])
